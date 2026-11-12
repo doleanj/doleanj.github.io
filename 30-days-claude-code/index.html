@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>30 days with Claude Code · LinkedIn version</title>
+<meta name="description" content="30 days with Claude Code · LinkedIn version">
+<meta property="og:title" content="30 days with Claude Code · LinkedIn version">
+<meta property="og:type" content="article">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&amp;family=Inter:wght@400;600&amp;display=swap">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#0F172A;color:#E3EAF8;font-family:Inter,Arial,sans-serif}
+main{max-width:1200px;margin:0 auto;padding:16px}
+.frame{position:relative;width:100%;aspect-ratio:16/9;overflow:hidden;border-radius:12px;margin:0 0 20px}
+.frame>section{position:absolute;top:0;left:0;width:1920px;height:1080px;transform-origin:0 0}
+table{border-collapse:collapse;width:100%}
+th,td{padding:.35em .6em;border-bottom:1px solid #D9DDE3;text-align:left;vertical-align:top}
+th{font-weight:600}
+footer{max-width:1200px;margin:0 auto;padding:8px 16px 40px;font-size:14px;color:#9AA3B2}
+footer a{color:#BFC8DA}
+</style>
+</head>
+<body>
+<main>
+<div class="frame"><section id="cover" data-transition="fade" style="background:#14213D;color:#FBFBF8;font-family:'Inter', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;justify-content:space-between;gap:48px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;color:#E8A33D">FIELD REPORT · NOVEMBER 2026</p>
+<div style="display:flex;flex-direction:column;gap:40px">
+<h1 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:120px;font-weight:600;line-height:1.1">30 days with Claude Code</h1>
+<p style="font-size:40px;line-height:1.4;color:#BFC8DA;width:1400px">One engineer, nine apps in production, 900 pull requests: what a working system changes about AI.</p>
+</div>
+<p style="font-size:24px;color:#BFC8DA">October – November 2026 · personal projects</p>
+</section></div>
+<div class="frame"><section id="numbers" data-transition="fade" style="background:#FBFBF8;color:#14213D;font-family:'Inter', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:64px">
+<h2 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:64px;font-weight:600;line-height:1.1">900 pull requests in 30 days. One engineer.</h2>
+<div style="display:flex;gap:32px">
+<div style="flex:1;display:flex;flex-direction:column;gap:16px;border-top:4px solid #2459C4;padding:32px 0 0 0">
+<p style="font-family:'Space Grotesk', Arial, sans-serif;font-size:120px;font-weight:600;line-height:1.1;color:#2459C4">900+</p>
+<p style="font-size:28px;line-height:1.4;color:#4A5568">merged pull requests</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:16px;border-top:4px solid #2459C4;padding:32px 0 0 0">
+<p style="font-family:'Space Grotesk', Arial, sans-serif;font-size:120px;font-weight:600;line-height:1.1;color:#2459C4">17</p>
+<p style="font-size:28px;line-height:1.4;color:#4A5568">active code repositories</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:16px;border-top:4px solid #2459C4;padding:32px 0 0 0">
+<p style="font-family:'Space Grotesk', Arial, sans-serif;font-size:120px;font-weight:600;line-height:1.1;color:#2459C4">9</p>
+<p style="font-size:28px;line-height:1.4;color:#4A5568">apps in production</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:16px;border-top:4px solid #2459C4;padding:32px 0 0 0">
+<p style="font-family:'Space Grotesk', Arial, sans-serif;font-size:120px;font-weight:600;line-height:1.1;color:#2459C4">350</p>
+<p style="font-size:28px;line-height:1.4;color:#4A5568">written decisions and lessons</p>
+</div>
+</div>
+<p style="font-size:28px;line-height:1.4;color:#4A5568;width:1400px">Outside working hours. The numbers measure activity, not business value: about 60% product, 40% state documentation.</p>
+<p style="position:absolute;left:128px;bottom:64px;width:1200px;font-size:24px;color:#6A7179">Source: local git history, 11 October – 12 November 2026</p>
+<p style="position:absolute;right:128px;bottom:64px;width:200px;text-align:right;font-size:24px;color:#6A7179">2</p>
+</section></div>
+<div class="frame"><section id="thesis" data-transition="fade" style="background:#2459C4;color:#FBFBF8;font-family:'Inter', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;justify-content:center;gap:48px">
+<h1 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:88px;font-weight:600;line-height:1.15">The result doesn’t come from the model’s speed. It comes from a working system that is written, versioned and measured.</h1>
+<p style="font-size:32px;line-height:1.4;color:#E3EAF8;width:1300px">Rules, commands loaded on demand, guardrails enforced by the machine, a decision log.</p>
+</section></div>
+<div class="frame"><section id="question" data-transition="fade" style="background:#14213D;color:#FBFBF8;font-family:'Inter', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;justify-content:center;gap:48px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;color:#E8A33D">THE QUESTION</p>
+<h1 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:88px;font-weight:600;line-height:1.15">How do you multiply teams’ AI capacity without becoming their bottleneck?</h1>
+<p style="font-size:36px;line-height:1.4;color:#BFC8DA;width:1400px">My answer: a kit they use themselves, not projects we run for them.</p>
+</section></div>
+<div class="frame"><section id="loop" data-transition="fade" style="background:#FBFBF8;color:#14213D;font-family:'Inter', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<h2 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:64px;font-weight:600;line-height:1.1">The human decides, the machine executes</h2>
+<div style="display:grid;grid-template-columns:repeat(3, 1fr);gap:32px">
+<div style="display:flex;flex-direction:column;gap:12px;background:#FFFFFF;padding:36px;border:1px solid #D9DDE3;border-radius:16px">
+<h3 style="font-size:36px;font-weight:600;line-height:1.2">1. Pickup</h3>
+<p style="font-size:26px;line-height:1.4;color:#4A5568">The session reads the state left in the repository.</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:12px;background:#E8EFFB;padding:36px;border:3px solid #2459C4;border-radius:16px">
+<h3 style="font-size:36px;font-weight:600;line-height:1.2">2. Design</h3>
+<p style="font-size:26px;line-height:1.4;color:#14213D">Human gate: the human approves the spec.</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:12px;background:#FFFFFF;padding:36px;border:1px solid #D9DDE3;border-radius:16px">
+<h3 style="font-size:36px;font-weight:600;line-height:1.2">3. Build</h3>
+<p style="font-size:26px;line-height:1.4;color:#4A5568">Branch, code and tests on a throwaway instance.</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:12px;background:#FFFFFF;padding:36px;border:1px solid #D9DDE3;border-radius:16px">
+<h3 style="font-size:36px;font-weight:600;line-height:1.2">4. Ship</h3>
+<p style="font-size:26px;line-height:1.4;color:#4A5568">The PR is merged when tests are green.</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:12px;background:#FFFFFF;padding:36px;border:1px solid #D9DDE3;border-radius:16px">
+<h3 style="font-size:36px;font-weight:600;line-height:1.2">5. Verify</h3>
+<p style="font-size:26px;line-height:1.4;color:#4A5568">Automatic deployment, then a real check.</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:12px;background:#FFFFFF;padding:36px;border:1px solid #D9DDE3;border-radius:16px">
+<h3 style="font-size:36px;font-weight:600;line-height:1.2">6. Handoff</h3>
+<p style="font-size:26px;line-height:1.4;color:#4A5568">State rewritten, lessons logged for next time.</p>
+</div>
+</div>
+<p style="font-size:28px;line-height:1.4;color:#4A5568">A session resumes in 7 tool calls instead of 16: the context lives in the repo, not in someone’s head.</p>
+<p style="position:absolute;left:128px;bottom:64px;width:1200px;font-size:24px;color:#6A7179">30 days with Claude Code</p>
+<p style="position:absolute;right:128px;bottom:64px;width:200px;text-align:right;font-size:24px;color:#6A7179">5</p>
+</section></div>
+<div class="frame"><section id="production" data-transition="fade" style="background:#FBFBF8;color:#14213D;font-family:'Inter', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:56px">
+<h2 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:64px;font-weight:600;line-height:1.1">The agent has no direct access to production</h2>
+<div style="display:flex;gap:24px;align-items:center">
+<div style="flex:1;display:flex;flex-direction:column;gap:12px;background:#FFFFFF;padding:40px;border:1px solid #D9DDE3;border-radius:16px">
+<h3 style="font-size:36px;font-weight:600;line-height:1.2">1. Dry run</h3>
+<p style="font-size:26px;line-height:1.4;color:#4A5568">The agent prepares a tested script. It runs as a dry run, after a backup.</p>
+</div>
+<div style="width:64px;height:32px;background:#9AA3B2;clip-path:polygon(0 30%,60% 30%,60% 0,100% 50%,60% 100%,60% 70%,0 70%);flex:none"></div>
+<div style="flex:1;display:flex;flex-direction:column;gap:12px;background:#E8EFFB;padding:40px;border:3px solid #2459C4;border-radius:16px">
+<h3 style="font-size:36px;font-weight:600;line-height:1.2">2. Approval</h3>
+<p style="font-size:26px;line-height:1.4;color:#14213D">A human reviews the dry run and approves the real run, bound to that dry run.</p>
+</div>
+<div style="width:64px;height:32px;background:#9AA3B2;clip-path:polygon(0 30%,60% 30%,60% 0,100% 50%,60% 100%,60% 70%,0 70%);flex:none"></div>
+<div style="flex:1;display:flex;flex-direction:column;gap:12px;background:#FFFFFF;padding:40px;border:1px solid #D9DDE3;border-radius:16px">
+<h3 style="font-size:36px;font-weight:600;line-height:1.2">3. Audit trail</h3>
+<p style="font-size:26px;line-height:1.4;color:#4A5568">The run leaves an audit trail. A read-only check mode verifies the result.</p>
+</div>
+</div>
+<p style="font-size:32px;line-height:1.4;color:#14213D;width:1400px">The agent’s autonomy stops where the risk starts. That is what makes it acceptable.</p>
+<p style="position:absolute;left:128px;bottom:64px;width:1200px;font-size:24px;color:#6A7179">30 days with Claude Code</p>
+<p style="position:absolute;right:128px;bottom:64px;width:200px;text-align:right;font-size:24px;color:#6A7179">6</p>
+</section></div>
+<div class="frame"><section id="withoutai" data-transition="fade" style="background:#FBFBF8;color:#14213D;font-family:'Inter', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:40px">
+<h2 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:64px;font-weight:600;line-height:1.1">Without AI: 6 to 9 months full time. With AI: 30 days, and I’m not a DevOps engineer.</h2>
+<div style="display:flex;gap:40px">
+<table style="width:1040px;font-size:24px;color:#14213D">
+<tr style="background:#14213D"><th style="width:42%;text-align:left;color:#FBFBF8">Workstream</th><th style="width:22%;text-align:left;color:#FBFBF8">Without AI</th><th style="width:36%;text-align:left;color:#FBFBF8">To learn first</th></tr>
+<tr><td>Monitoring and tested alerts</td><td>4 – 6 wks</td><td>PromQL, exporters</td></tr>
+<tr style="background:#F1F3F6"><td>SSO across apps</td><td>4 – 8 wks</td><td>OIDC, identity provider</td></tr>
+<tr><td>CI to production pipeline</td><td>2 – 3 wks</td><td>Docker, CI, registries</td></tr>
+<tr style="background:#F1F3F6"><td>Four mobile PWAs</td><td>8 – 12 wks</td><td>Front-end, service workers</td></tr>
+<tr><td>Three lossless migrations</td><td>3 – 4 wks</td><td>Databases, backups</td></tr>
+<tr style="background:#F1F3F6"><td>Method, hooks, metrics</td><td>3 – 4 wks</td><td>Nothing: it’s Python</td></tr>
+<tr><td><b>Total</b></td><td><b>24 – 37 wks</b></td><td>Excluding the apps</td></tr>
+</table>
+<div style="flex:1;display:flex;flex-direction:column;gap:18px;background:#E8EFFB;padding:36px;border:3px solid #2459C4;border-radius:16px">
+<p style="font-size:24px;font-weight:600;letter-spacing:2px;color:#2459C4">MY PROFILE: PYTHON DEV</p>
+<p style="font-size:26px;line-height:1.35;color:#14213D">I shipped outside my field: infra, security, mobile front-end.</p>
+<p style="font-size:26px;line-height:1.35;color:#14213D">My role changed: decide, specify, verify.</p>
+<p style="font-size:26px;line-height:1.35;color:#14213D">I learned along the way: every choice is explained in an ADR.</p>
+</div>
+</div>
+<p style="font-size:28px;line-height:1.4;color:#14213D">With AI, a Python developer ships like a cross-functional team.</p>
+<p style="position:absolute;left:128px;bottom:64px;width:1300px;font-size:24px;color:#6A7179">Author’s estimate, order of magnitude, full time, learning included</p>
+<p style="position:absolute;right:128px;bottom:64px;width:200px;text-align:right;font-size:24px;color:#6A7179">7</p>
+</section></div>
+<div class="frame"><section id="lessons" data-transition="fade" style="background:#FBFBF8;color:#14213D;font-family:'Inter', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<h2 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:64px;font-weight:600;line-height:1.1">Mistakes become rules</h2>
+<table style="font-size:24px;color:#14213D">
+<tr style="background:#14213D"><th style="width:26%;text-align:left;color:#FBFBF8">Finding</th><th style="width:37%;text-align:left;color:#FBFBF8">What happened</th><th style="width:37%;text-align:left;color:#FBFBF8">Rule it produced</th></tr>
+<tr><td>“Verified” when it wasn’t</td><td>A nightly export failed silently</td><td>Every scheduled job alerts on failure</td></tr>
+<tr style="background:#F1F3F6"><td>Sentences are not enough</td><td>Lessons left as text came back</td><td>A lesson becomes a hook or a script</td></tr>
+<tr><td>State has a cost</td><td>40% of merges are state documentation</td><td>Handoffs go straight to the main branch</td></tr>
+<tr style="background:#F1F3F6"><td>Designs pile up</td><td>Four designs in seven days, one built</td><td>One design waiting at a time</td></tr>
+<tr><td>Human load rises</td><td>Every session asks for decisions</td><td>Three active projects max, load measured</td></tr>
+</table>
+<p style="font-size:28px;line-height:1.4;color:#4A5568">Limits: one user, personal projects, no team or compliance constraints.</p>
+<p style="position:absolute;left:128px;bottom:64px;width:1200px;font-size:24px;color:#6A7179">30 days with Claude Code</p>
+<p style="position:absolute;right:128px;bottom:64px;width:200px;text-align:right;font-size:24px;color:#6A7179">8</p>
+</section></div>
+<div class="frame"><section id="agentic" data-transition="fade" style="background:#FBFBF8;color:#14213D;font-family:'Inter', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:40px">
+<h2 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:64px;font-weight:600;line-height:1.1">Next: scaling up towards agentic</h2>
+<div style="display:flex;gap:20px;align-items:end;height:600px">
+<div style="flex:1;height:260px;display:flex;flex-direction:column;gap:10px;background:#FFFFFF;padding:24px;border:1px solid #D9DDE3;border-radius:16px">
+<p style="font-size:24px;font-weight:600;color:#6A7179">LEVEL 1</p>
+<h3 style="font-size:28px;font-weight:600;line-height:1.2">Assistant</h3>
+<p style="font-size:24px;line-height:1.3;color:#4A5568">AI suggests, the dev writes.</p>
+</div>
+<div style="flex:1;height:330px;display:flex;flex-direction:column;gap:10px;background:#FFFFFF;padding:24px;border:1px solid #D9DDE3;border-radius:16px">
+<p style="font-size:24px;font-weight:600;color:#6A7179">LEVEL 2</p>
+<h3 style="font-size:28px;font-weight:600;line-height:1.2">Pair</h3>
+<p style="font-size:24px;line-height:1.3;color:#4A5568">The agent codes and tests, the dev reviews every PR.</p>
+</div>
+<div style="flex:1;height:420px;display:flex;flex-direction:column;gap:10px;background:#E8EFFB;padding:24px;border:3px solid #2459C4;border-radius:16px">
+<p style="font-size:24px;font-weight:600;color:#2459C4">HERE, TODAY</p>
+<h3 style="font-size:28px;font-weight:600;line-height:1.2">Autonomous behind gates</h3>
+<p style="font-size:24px;line-height:1.3;color:#14213D">The agent ships alone on green tests. The human owns spec and prod.</p>
+</div>
+<div style="flex:1;height:510px;display:flex;flex-direction:column;gap:10px;background:#FFFFFF;padding:24px;border:2px dashed #2459C4;border-radius:16px">
+<p style="font-size:24px;font-weight:600;color:#2459C4">IN TRIAL</p>
+<h3 style="font-size:28px;font-weight:600;line-height:1.2">Agent factory</h3>
+<p style="font-size:24px;line-height:1.3;color:#4A5568">One agent specs and reviews, agents build in parallel.</p>
+</div>
+<div style="flex:1;height:600px;display:flex;flex-direction:column;gap:10px;background:#FFFFFF;padding:24px;border:2px dashed #9AA3B2;border-radius:16px">
+<p style="font-size:24px;font-weight:600;color:#6A7179">TO EXPLORE</p>
+<h3 style="font-size:28px;font-weight:600;line-height:1.2">Operations agents</h3>
+<p style="font-size:24px;line-height:1.3;color:#4A5568">They monitor, diagnose and propose a fix as a dry run.</p>
+</div>
+</div>
+<p style="font-size:28px;line-height:1.4;color:#14213D">Every step keeps the same human gates: more autonomy, not more risk.</p>
+<p style="position:absolute;left:128px;bottom:64px;width:1200px;font-size:24px;color:#6A7179">30 days with Claude Code</p>
+<p style="position:absolute;right:128px;bottom:64px;width:200px;text-align:right;font-size:24px;color:#6A7179">9</p>
+</section></div>
+<div class="frame"><section id="end" data-transition="fade" style="background:#14213D;color:#FBFBF8;font-family:'Inter', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;justify-content:space-between;gap:48px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;color:#E8A33D">WHAT I TAKE AWAY</p>
+<div style="display:flex;flex-direction:column;gap:40px">
+<h1 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:88px;font-weight:600;line-height:1.15">AI doesn’t replace know-how. It extends it, provided you build the tooling around it.</h1>
+<p style="font-size:40px;line-height:1.4;color:#BFC8DA;width:1450px">Building this kind of system, in a team or solo? Let’s talk.</p>
+</div>
+<p style="font-size:24px;color:#BFC8DA">30 days with Claude Code · field report</p>
+</section></div>
+</main>
+<footer><a href="../">All talks</a> · Claude Code</footer>
+<script>
+function fit(){document.querySelectorAll('.frame').forEach(function(f){
+f.firstElementChild.style.transform='scale('+(f.clientWidth/1920)+')';});}
+window.addEventListener('resize',fit);window.addEventListener('load',fit);fit();
+</script>
+</body>
+</html>
